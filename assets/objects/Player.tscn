@@ -1,9 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://4gojng7b52pd"]
+[gd_scene load_steps=19 format=3 uid="uid://4gojng7b52pd"]
 
 [ext_resource type="Script" path="res://assets/scripts/Player.gd" id="1_1r3m8"]
 [ext_resource type="Texture2D" uid="uid://c6k5uvmg3fruu" path="res://assets/player.png" id="1_t3823"]
 [ext_resource type="PackedScene" uid="uid://cudc4su4n30ak" path="res://assets/objects/RayGun.tscn" id="3_b5wtq"]
-[ext_resource type="PackedScene" uid="uid://bw48n1f0v51mn" path="res://assets/objects/HealthDisplay.tscn" id="4_umeh7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhnjy"]
 size = Vector2(6.05653, 15.044)
@@ -160,5 +159,3 @@ position = Vector2(0, -10)
 position = Vector2(-3.09417, -4.97599)
 scale = Vector2(-1, 1)
 offset = Vector2(1.90777, -0.516898)
-
-[node name="Health" parent="." instance=ExtResource("4_umeh7")]

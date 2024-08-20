@@ -30,7 +30,7 @@ func respawn():
 	health = 1  
 	global_position = respawn_position
 	print("Player respawned at: ", respawn_position)
-	health_display.update_health_display()
+
 	
 func game_over():
 	get_tree().change_scene_to_file(game_over_scene)

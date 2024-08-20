@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724127610
+::res://::1724129543
 ATTRIBUTION.md::TextFile::-1::1724111238::0::1::::<><>::
 LICENSE.txt::TextFile::-1::1724108174::0::1::::<><>::
 ::res://assets/::1724127509
@@ -11,28 +11,28 @@ player.png::CompressedTexture2D::6971197645205148456::1724120232::1724120279::1:
 red_ray.png::CompressedTexture2D::5365865253480529343::1723940894::1723940957::1::::<><>::
 shrink_ray.png::CompressedTexture2D::585356820213730998::1723932980::1723932984::1::::<><>::
 subtraction_symbol.png::CompressedTexture2D::3729288121265877589::1724108174::1724108995::1::::<><>::
-::res://assets/objects/::1724128608
+::res://assets/objects/::1724129501
 Block2.tscn::PackedScene::6159373665827465389::1724115668::0::1::::<><>::res://assets/scripts/Block2.gd
 Block.tscn::PackedScene::5308073490738217544::1724118977::0::1::::<><>::uid://n7osfehmlhg3::::res://assets/bitmap.png<>res://assets/scripts/Block.gd
 BlueLaser.tscn::PackedScene::629977577832459441::1724125429::0::1::::<><>::res://assets/scripts/BlueLaser.gd<>uid://c6hajfab8flt7::::res://assets/blue_ray.png
 Entrance.tscn::PackedScene::5443677149062190748::1724118977::0::1::::<><>::res://assets/scripts/Exit.gd
 Exit.tscn::PackedScene::6694956740114560473::1724122553::0::1::::<><>::res://assets/scripts/Exit.gd
-Health.tscn::PackedScene::3992470449175888045::1724128608::0::1::::<><>::res://assets/scripts/Health.gd<>uid://c8lj4ubsg3rbq::::res://assets/hearts.png
+HealthDisplay.tscn::PackedScene::3992470449175888045::1724129406::0::1::::<><>::res://assets/scripts/Health.gd<>uid://c8lj4ubsg3rbq::::res://assets/hearts.png
 Lava.tscn::PackedScene::3785594221160811557::1724118977::0::1::::<><>::res://assets/scripts/Lava.gd<>uid://n7osfehmlhg3::::res://assets/bitmap.png
-Player.tscn::PackedScene::2048729535600031469::1724128705::0::1::::<><>::res://assets/scripts/Player.gd<>uid://c6k5uvmg3fruu::::res://assets/player.png<>uid://cudc4su4n30ak::::res://assets/objects/RayGun.tscn<>uid://bw48n1f0v51mn::::res://assets/objects/Health.tscn
+Player.tscn::PackedScene::2048729535600031469::1724129501::0::1::::<><>::res://assets/scripts/Player.gd<>uid://c6k5uvmg3fruu::::res://assets/player.png<>uid://cudc4su4n30ak::::res://assets/objects/RayGun.tscn<>uid://bw48n1f0v51mn::::res://assets/objects/HealthDisplay.tscn
 RayGun.tscn::PackedScene::6182985573070324030::1724125429::0::1::::<><>::uid://ils0g7lr1u6i::::res://assets/shrink_ray.png<>res://assets/scripts/RayGun.gd<>uid://cg4nc40m41m36::::res://assets/objects/RedLaser.tscn<>uid://i8fvykenve2t::::res://assets/objects/BlueLaser.tscn
 RedLaser.tscn::PackedScene::5254635838958183911::1724125429::0::1::::<><>::res://assets/scripts/RedLaser.gd<>uid://cipjatm22dksl::::res://assets/red_ray.png
 small_block.tscn::PackedScene::8228467021153908738::1724118977::0::1::::<><>::res://assets/scripts/Block.gd
-::res://assets/scripts/::1724128607
+::res://assets/scripts/::1724129327
 Base.gd::GDScript::-1::1724116559::0::1::::<>TileMap<>::
 Block2.gd::GDScript::-1::1724115618::0::1::::<>Sprite2D<>::
 Block.gd::GDScript::-1::1724116959::0::1::::<>TileMap<>::
 BlueLaser.gd::GDScript::-1::1724115665::0::1::::<>Area2D<>::
 Exit.gd::GDScript::-1::1724119505::0::1::::<>Area2D<>::
 Game Over.gd::GDScript::-1::1724119599::0::1::::<>Node2D<>::
-Health.gd::GDScript::-1::1724128658::0::1::::<>CanvasLayer<>::
+Health.gd::GDScript::-1::1724129327::0::1::::<>CanvasLayer<>::
 Lava.gd::GDScript::-1::1724105160::0::1::::<>Area2D<>::
-Player.gd::GDScript::-1::1724128705::0::1::::<>CharacterBody2D<>::
+Player.gd::GDScript::-1::1724128753::0::1::::<>CharacterBody2D<>::
 RayGun.gd::GDScript::-1::1724125295::0::1::::<>Sprite2D<>::
 RedLaser.gd::GDScript::-1::1724116789::0::1::::<>Area2D<>::
 ::res://menus/::1724109546
@@ -58,9 +58,9 @@ InputHelper.gd::GDScript::-1::1724108174::0::1::::InputEventHelper<>Node<>::
 MusicController.gd::GDScript::-1::1724108174::0::1::::MusicController<>Node<>::
 UISoundController.gd::GDScript::-1::1724108174::0::1::::UISoundController<>Node<>::
 ::res://menus/Menus/::1724108174
-::res://menus/Menus/MainMenu/::1724128608
+::res://menus/Menus/MainMenu/::1724129406
 MainMenu.gd::GDScript::-1::1724112194::0::1::::MainMenu<>Control<>::
-MainMenu.tscn::PackedScene::6971184728863297558::1724128608::0::1::::<><>::res://menus/Menus/MainMenu/MainMenu.gd<>uid://hmx6o472ropw::::res://menus/Menus/OptionsMenu/MasterOptionsMenuWithTabs.tscn<>uid://t2dui8ppm3a4::::res://menus/Credits/Credits.tscn<>res://menus/menu scripts/CaptureFocus.gd<>uid://bkcsjsk2ciff::::res://menus/MusicPlayers/BackgroundMusicPlayer.tscn<>res://menus/menu scripts/UISoundController.gd
+MainMenu.tscn::PackedScene::6971184728863297558::1724129406::0::1::::<><>::res://menus/Menus/MainMenu/MainMenu.gd<>uid://hmx6o472ropw::::res://menus/Menus/OptionsMenu/MasterOptionsMenuWithTabs.tscn<>uid://t2dui8ppm3a4::::res://menus/Credits/Credits.tscn<>res://menus/menu scripts/CaptureFocus.gd<>uid://bkcsjsk2ciff::::res://menus/MusicPlayers/BackgroundMusicPlayer.tscn<>res://menus/menu scripts/UISoundController.gd
 ::res://menus/Menus/OptionsMenu/::1724122677
 MasterOptionsMenu.gd::GDScript::-1::1724108174::0::1::::MasterOptionsMenu<>Control<>::
 MasterOptionsMenu.tscn::PackedScene::114897600673659709::1724122662::0::1::::<><>::res://menus/Menus/OptionsMenu/MasterOptionsMenu.gd
@@ -91,7 +91,7 @@ VideoOptionsMenu.gd::GDScript::-1::1724108174::0::1::::VideoOptionsMenu<>Control
 VideoOptionsMenu.tscn::PackedScene::4309593268593162244::1724109892::0::1::::<><>::res://menus/Menus/OptionsMenu/Video/VideoOptionsMenu.gd<>uid://bsxh6v7j0257h::::res://menus/Menus/OptionsMenu/OptionControl/ToggleOptionControl.tscn<>uid://c01ayjblhcg1t::::res://menus/Menus/OptionsMenu/OptionControl/Vector2ListOptionControl.tscn
 ::res://menus/MusicPlayers/::1724112292
 BackgroundMusicPlayer.tscn::PackedScene::90986700461605327::1724112292::0::1::::<><>::
-::res://scenes/::1724128608
+::res://scenes/::1724129504
 Game Over.tscn::PackedScene::6529497006550419371::1724122553::0::1::::<><>::res://assets/scripts/Game Over.gd
-Level_1.tscn::PackedScene::2077594739046686853::1724128608::0::1::::<><>::uid://n7osfehmlhg3::::res://assets/bitmap.png<>res://assets/scripts/Base.gd<>uid://4gojng7b52pd::::res://assets/objects/Player.tscn<>uid://chvjgvjkdgmfo::::res://assets/objects/Block.tscn<>uid://bt61giny0tr8x::::res://assets/objects/Lava.tscn<>uid://c2nc7va4agbaf::::res://assets/objects/Exit.tscn<>uid://cjs7tj2x7gpei::::res://assets/objects/Entrance.tscn
+Level_1.tscn::PackedScene::2077594739046686853::1724129504::0::1::::<><>::uid://n7osfehmlhg3::::res://assets/bitmap.png<>res://assets/scripts/Base.gd<>uid://4gojng7b52pd::::res://assets/objects/Player.tscn<>uid://chvjgvjkdgmfo::::res://assets/objects/Block.tscn<>uid://bt61giny0tr8x::::res://assets/objects/Lava.tscn<>uid://c2nc7va4agbaf::::res://assets/objects/Exit.tscn<>uid://cjs7tj2x7gpei::::res://assets/objects/Entrance.tscn
 Win.tscn::PackedScene::3292905246634117327::1724122553::0::1::::<><>::res://assets/scripts/Game Over.gd
