@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw48n1f0v51mn"]
+
+[ext_resource type="Script" path="res://assets/scripts/Health.gd" id="1_0vas7"]
+[ext_resource type="Texture2D" uid="uid://c8lj4ubsg3rbq" path="res://assets/hearts.png" id="2_gpi8h"]
+
+[node name="Health" type="CanvasLayer"]
+script = ExtResource("1_0vas7")
+heart_texture = ExtResource("2_gpi8h")

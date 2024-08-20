@@ -1,0 +1,8 @@
+res://menus/Menus/MainMenu/MainMenu.tscn
+res://assets/objects/Health.tscn
+res://assets/objects/Health.gd
+res://scenes/Level_1.tscn
+res://assets/scripts/Health.gd
+res://assets/scripts/Player.gd
+res://assets/objects/Player.tscn
+res://assets/objects/HealthDisplay.tscn

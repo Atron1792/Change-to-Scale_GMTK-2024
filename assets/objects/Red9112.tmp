@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg4nc40m41m36"]
+
+[ext_resource type="Script" path="res://assets/scripts/RedLaser.gd" id="1_4qchp"]
+[ext_resource type="Texture2D" uid="uid://cipjatm22dksl" path="res://assets/red_ray.png" id="2_milna"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abpmd"]
+size = Vector2(12.0036, 2.97302)
+
+[node name="RedLaser" type="Area2D"]
+z_index = 1
+position = Vector2(16, -16)
+collision_layer = 64
+collision_mask = 22
+script = ExtResource("1_4qchp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, -4.76837e-07)
+scale = Vector2(2.9973, 1.5)
+texture = ExtResource("2_milna")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.00348186, -0.00105762)
+shape = SubResource("RectangleShape2D_abpmd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,97 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1724127610
+ATTRIBUTION.md::TextFile::-1::1724111238::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1724108174::0::1::::<><>::
+::res://assets/::1724127509
+addition_symbol.png::CompressedTexture2D::6606990583365996727::1724108174::1724108995::1::::<><>::
+bitmap.png::CompressedTexture2D::979397506743845500::1723946157::1723946169::1::::<><>::
+blue_ray.png::CompressedTexture2D::6963162499295263658::1723940804::1723940809::1::::<><>::
+hearts.png::CompressedTexture2D::7112380656532851638::1724127504::1724127509::1::::<><>::
+player.png::CompressedTexture2D::6971197645205148456::1724120232::1724120279::1::::<><>::
+red_ray.png::CompressedTexture2D::5365865253480529343::1723940894::1723940957::1::::<><>::
+shrink_ray.png::CompressedTexture2D::585356820213730998::1723932980::1723932984::1::::<><>::
+subtraction_symbol.png::CompressedTexture2D::3729288121265877589::1724108174::1724108995::1::::<><>::
+::res://assets/objects/::1724128608
+Block2.tscn::PackedScene::6159373665827465389::1724115668::0::1::::<><>::res://assets/scripts/Block2.gd
+Block.tscn::PackedScene::5308073490738217544::1724118977::0::1::::<><>::uid://n7osfehmlhg3::::res://assets/bitmap.png<>res://assets/scripts/Block.gd
+BlueLaser.tscn::PackedScene::629977577832459441::1724125429::0::1::::<><>::res://assets/scripts/BlueLaser.gd<>uid://c6hajfab8flt7::::res://assets/blue_ray.png
+Entrance.tscn::PackedScene::5443677149062190748::1724118977::0::1::::<><>::res://assets/scripts/Exit.gd
+Exit.tscn::PackedScene::6694956740114560473::1724122553::0::1::::<><>::res://assets/scripts/Exit.gd
+Health.tscn::PackedScene::3992470449175888045::1724128608::0::1::::<><>::res://assets/scripts/Health.gd<>uid://c8lj4ubsg3rbq::::res://assets/hearts.png
+Lava.tscn::PackedScene::3785594221160811557::1724118977::0::1::::<><>::res://assets/scripts/Lava.gd<>uid://n7osfehmlhg3::::res://assets/bitmap.png
+Player.tscn::PackedScene::2048729535600031469::1724128705::0::1::::<><>::res://assets/scripts/Player.gd<>uid://c6k5uvmg3fruu::::res://assets/player.png<>uid://cudc4su4n30ak::::res://assets/objects/RayGun.tscn<>uid://bw48n1f0v51mn::::res://assets/objects/Health.tscn
+RayGun.tscn::PackedScene::6182985573070324030::1724125429::0::1::::<><>::uid://ils0g7lr1u6i::::res://assets/shrink_ray.png<>res://assets/scripts/RayGun.gd<>uid://cg4nc40m41m36::::res://assets/objects/RedLaser.tscn<>uid://i8fvykenve2t::::res://assets/objects/BlueLaser.tscn
+RedLaser.tscn::PackedScene::5254635838958183911::1724125429::0::1::::<><>::res://assets/scripts/RedLaser.gd<>uid://cipjatm22dksl::::res://assets/red_ray.png
+small_block.tscn::PackedScene::8228467021153908738::1724118977::0::1::::<><>::res://assets/scripts/Block.gd
+::res://assets/scripts/::1724128607
+Base.gd::GDScript::-1::1724116559::0::1::::<>TileMap<>::
+Block2.gd::GDScript::-1::1724115618::0::1::::<>Sprite2D<>::
+Block.gd::GDScript::-1::1724116959::0::1::::<>TileMap<>::
+BlueLaser.gd::GDScript::-1::1724115665::0::1::::<>Area2D<>::
+Exit.gd::GDScript::-1::1724119505::0::1::::<>Area2D<>::
+Game Over.gd::GDScript::-1::1724119599::0::1::::<>Node2D<>::
+Health.gd::GDScript::-1::1724128658::0::1::::<>CanvasLayer<>::
+Lava.gd::GDScript::-1::1724105160::0::1::::<>Area2D<>::
+Player.gd::GDScript::-1::1724128705::0::1::::<>CharacterBody2D<>::
+RayGun.gd::GDScript::-1::1724125295::0::1::::<>Sprite2D<>::
+RedLaser.gd::GDScript::-1::1724116789::0::1::::<>Area2D<>::
+::res://menus/::1724109546
+::res://menus/Autoloads/::1724109541
+AppConfig.gd::GDScript::-1::1724108174::0::1::::<>Node<>::
+AppConfig.tscn::PackedScene::5425483096977576605::1724109541::0::1::::<><>::res://menus/Autoloads/AppConfig.gd
+ProjectMusicController.tscn::PackedScene::1256348865492462175::1724109512::0::1::::<><>::res://menus/menu scripts/MusicController.gd
+ProjectUISoundController.tscn::PackedScene::4973014309445390759::1724109512::0::1::::<><>::res://menus/menu scripts/UISoundController.gd
+SceneLoader.gd::GDScript::-1::1724108174::0::1::::SceneLoaderClass<>Node<>::
+SceneLoader.tscn::PackedScene::4889206191134864012::1724109541::0::1::::<><>::res://menus/Autoloads/SceneLoader.gd
+::res://menus/Credits/::1724109653
+Credits.gd::GDScript::-1::1724108174::0::1::::Credits<>Control<>::
+Credits.tscn::PackedScene::1389544567206053885::1724109653::0::1::::<><>::res://menus/Credits/Credits.gd
+::res://menus/LoadingScreen/::1724109541
+LoadingScreen.gd::GDScript::-1::1724108174::0::1::::LoadingScreen<>CanvasLayer<>::
+LoadingScreen.tscn::PackedScene::5035565993894699171::1724109541::0::1::::<><>::res://menus/LoadingScreen/LoadingScreen.gd
+::res://menus/menu scripts/::1724116133
+AppLog.gd::GDScript::-1::1724108174::0::1::::AppLog<>Node<>::
+AppSettings.gd::GDScript::-1::1724108174::0::1::::AppSettings<>Node<>::
+CaptureFocus.gd::GDScript::-1::1724108174::0::1::::CaptureFocus<>Container<>::
+Config.gd::GDScript::-1::1724116133::0::1::::Config<>Node<>::
+InputHelper.gd::GDScript::-1::1724108174::0::1::::InputEventHelper<>Node<>::
+MusicController.gd::GDScript::-1::1724108174::0::1::::MusicController<>Node<>::
+UISoundController.gd::GDScript::-1::1724108174::0::1::::UISoundController<>Node<>::
+::res://menus/Menus/::1724108174
+::res://menus/Menus/MainMenu/::1724128608
+MainMenu.gd::GDScript::-1::1724112194::0::1::::MainMenu<>Control<>::
+MainMenu.tscn::PackedScene::6971184728863297558::1724128608::0::1::::<><>::res://menus/Menus/MainMenu/MainMenu.gd<>uid://hmx6o472ropw::::res://menus/Menus/OptionsMenu/MasterOptionsMenuWithTabs.tscn<>uid://t2dui8ppm3a4::::res://menus/Credits/Credits.tscn<>res://menus/menu scripts/CaptureFocus.gd<>uid://bkcsjsk2ciff::::res://menus/MusicPlayers/BackgroundMusicPlayer.tscn<>res://menus/menu scripts/UISoundController.gd
+::res://menus/Menus/OptionsMenu/::1724122677
+MasterOptionsMenu.gd::GDScript::-1::1724108174::0::1::::MasterOptionsMenu<>Control<>::
+MasterOptionsMenu.tscn::PackedScene::114897600673659709::1724122662::0::1::::<><>::res://menus/Menus/OptionsMenu/MasterOptionsMenu.gd
+MasterOptionsMenuWithTabs.tscn::PackedScene::517547070576554052::1724122677::0::1::::<><>::uid://bvwl11s2p0hd::::res://menus/Menus/OptionsMenu/MasterOptionsMenu.tscn<>uid://dp3rgqaehb3xu::::res://menus/Menus/OptionsMenu/Input/InputOptionsMenu.tscn<>uid://c8vnncjwqcpab::::res://menus/Menus/OptionsMenu/Audio/AudioOptionsMenu.tscn<>uid://b2numvphf2kau::::res://menus/Menus/OptionsMenu/Video/VideoOptionsMenu.tscn
+MiniOptionsMenu.gd::GDScript::-1::1724108174::0::1::::MiniOptionsMenu<>Control<>::
+MiniOptionsMenu.tscn::PackedScene::1490030838566736406::1724109541::0::1::::<><>::res://menus/Menus/OptionsMenu/MiniOptionsMenu.gd<>uid://cl416gdb1fgwr::::res://menus/Menus/OptionsMenu/OptionControl/SliderOptionControl.tscn<>res://menus/menu scripts/CaptureFocus.gd<>uid://bsxh6v7j0257h::::res://menus/Menus/OptionsMenu/OptionControl/ToggleOptionControl.tscn
+::res://menus/Menus/OptionsMenu/Audio/::1724114672
+AudioOptionsMenu.gd::GDScript::-1::1724108174::0::1::::AudioOptionsMenu<>Control<>::
+AudioOptionsMenu.tscn::PackedScene::7133237796474250445::1724114672::0::1::::<><>::res://menus/Menus/OptionsMenu/Audio/AudioOptionsMenu.gd<>uid://bsxh6v7j0257h::::res://menus/Menus/OptionsMenu/OptionControl/ToggleOptionControl.tscn
+::res://menus/Menus/OptionsMenu/Audio/AudioControl/::1724114672
+AudioControl.gd::GDScript::-1::1724108174::0::1::::<>HBoxContainer<>::
+AudioControl.tscn::PackedScene::3407737051396901404::1724114672::0::1::::<><>::res://menus/Menus/OptionsMenu/Audio/AudioOptionsMenu.gd
+::res://menus/Menus/OptionsMenu/Input/::1724111374
+InputOptionsMenu.gd::GDScript::-1::1724111342::0::1::::InputOptionsMenu<>Control<>::
+InputOptionsMenu.tscn::PackedScene::8270941026968692746::1724111374::0::1::::<><>::res://menus/Menus/OptionsMenu/Input/InputOptionsMenu.gd
+KeyAssignmentDialog.gd::GDScript::-1::1724108174::0::1::::<>ConfirmationDialog<>::
+::res://menus/Menus/OptionsMenu/OptionControl/::1724122662
+ListOptionControl.gd::GDScript::-1::1724108174::0::1::::ListOptionControl<>OptionControl<>::
+ListOptionControl.tscn::PackedScene::4565057833090002680::1724122662::0::1::::<><>::uid://d7te75il06t7::::res://menus/Menus/OptionsMenu/OptionControl/OptionControl.tscn<>res://menus/Menus/OptionsMenu/OptionControl/ListOptionControl.gd
+OptionControl.gd::GDScript::-1::1724108174::0::1::::OptionControl<>Control<>::
+OptionControl.tscn::PackedScene::277789112552731674::1724122662::0::1::::<><>::res://menus/Menus/OptionsMenu/OptionControl/OptionControl.gd
+SliderOptionControl.tscn::PackedScene::5606419923550170173::1724122662::0::1::::<><>::uid://d7te75il06t7::::res://menus/Menus/OptionsMenu/OptionControl/OptionControl.tscn
+ToggleOptionControl.tscn::PackedScene::3697782088948994375::1724122662::0::1::::<><>::uid://d7te75il06t7::::res://menus/Menus/OptionsMenu/OptionControl/OptionControl.tscn
+Vector2ListOptionControl.gd::GDScript::-1::1724108174::0::1::::Vector2ListOptionControl<>ListOptionControl<>::
+Vector2ListOptionControl.tscn::PackedScene::6581279613760469567::1724109743::0::1::::<><>::uid://b6bl3n5mp3m1e::::res://menus/Menus/OptionsMenu/OptionControl/ListOptionControl.tscn<>res://menus/Menus/OptionsMenu/OptionControl/Vector2ListOptionControl.gd
+::res://menus/Menus/OptionsMenu/Video/::1724109892
+VideoOptionsMenu.gd::GDScript::-1::1724108174::0::1::::VideoOptionsMenu<>Control<>::
+VideoOptionsMenu.tscn::PackedScene::4309593268593162244::1724109892::0::1::::<><>::res://menus/Menus/OptionsMenu/Video/VideoOptionsMenu.gd<>uid://bsxh6v7j0257h::::res://menus/Menus/OptionsMenu/OptionControl/ToggleOptionControl.tscn<>uid://c01ayjblhcg1t::::res://menus/Menus/OptionsMenu/OptionControl/Vector2ListOptionControl.tscn
+::res://menus/MusicPlayers/::1724112292
+BackgroundMusicPlayer.tscn::PackedScene::90986700461605327::1724112292::0::1::::<><>::
+::res://scenes/::1724128608
+Game Over.tscn::PackedScene::6529497006550419371::1724122553::0::1::::<><>::res://assets/scripts/Game Over.gd
+Level_1.tscn::PackedScene::2077594739046686853::1724128608::0::1::::<><>::uid://n7osfehmlhg3::::res://assets/bitmap.png<>res://assets/scripts/Base.gd<>uid://4gojng7b52pd::::res://assets/objects/Player.tscn<>uid://chvjgvjkdgmfo::::res://assets/objects/Block.tscn<>uid://bt61giny0tr8x::::res://assets/objects/Lava.tscn<>uid://c2nc7va4agbaf::::res://assets/objects/Exit.tscn<>uid://cjs7tj2x7gpei::::res://assets/objects/Entrance.tscn
+Win.tscn::PackedScene::3292905246634117327::1724122553::0::1::::<><>::res://assets/scripts/Game Over.gd

@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://bt61giny0tr8x"]
+
+[ext_resource type="Script" path="res://assets/scripts/Lava.gd" id="1_pqnae"]
+[ext_resource type="Texture2D" uid="uid://n7osfehmlhg3" path="res://assets/bitmap.png" id="1_rvpm6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkfhw"]
+size = Vector2(320, 40)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8iwd"]
+texture = ExtResource("1_rvpm6")
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_i3gug"]
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 14
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/0 = SubResource("TileSetAtlasSource_y8iwd")
+
+[node name="Lava" type="Area2D"]
+collision_layer = 18
+collision_mask = 8
+script = ExtResource("1_pqnae")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = -2
+position = Vector2(0, -20)
+shape = SubResource("RectangleShape2D_mkfhw")
+
+[node name="Lava" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(1.00238, 1)
+tile_set = SubResource("TileSet_i3gug")
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 393216, 0, -65536, 393216, 1, -4, 393216, 2, -3, 393216, 1, -2, 393216, 0, -65535, 393216, 0, -65534, 393216, 0, -65533, 393216, 1, -9, 393216, 2, -8, 393216, 2, -7, 393216, 2, -6, 393216, 0, -5, 393216, 2, -65532, 393216, 1, -65531, 393216, 1, -65530, 393216, 2, -65529, 393216, 2, -65528, 393216, 0, -131064, 393216, 2, -131065, 393216, 0, -131067, 393216, 0, -131068, 393216, 1, -131069, 393216, 1, -131070, 393216, 2, -131071, 393216, 0, -131072, 393216, 2, -65537, 393216, 0, -65538, 393216, 2, -65539, 393216, 2, -65540, 393216, 1, -131066, 393216, 2, -65541, 393216, 2, -65542, 393216, 0, -65543, 393216, 1, -65544, 393216, 0, -65545, 393216, 0, -131063, 393216, 1, -65527, 393216, 0, -65546, 393216, 0, -10, 393216, 2)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://i8fvykenve2t"]
+
+[ext_resource type="Script" path="res://assets/scripts/BlueLaser.gd" id="1_dred1"]
+[ext_resource type="Texture2D" uid="uid://c6hajfab8flt7" path="res://assets/blue_ray.png" id="2_21v14"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abpmd"]
+size = Vector2(20, 5)
+
+[node name="BlueLaser" type="Area2D"]
+z_index = 1
+position = Vector2(40, -16)
+collision_layer = 32
+collision_mask = 22
+script = ExtResource("1_dred1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 1, 1)
+self_modulate = Color(0, 0, 1, 1)
+position = Vector2(-16, 0)
+scale = Vector2(4.97841, 2.48721)
+texture = ExtResource("2_21v14")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_abpmd")
+
+[node name="RemovalTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="RemovalTimer" to="." method="_on_removal_timer_timeout"]

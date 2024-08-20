@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0a64kfkb5kpf"]
+
+[ext_resource type="Script" path="res://assets/scripts/Game Over.gd" id="1_bhrvg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xdobt"]
+font_size = 70
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_bhrvg")
+main_menu = "res://menus/Menus/MainMenu/MainMenu.tscn"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -10
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.105882, 0.14902, 0.196078, 1)
+metadata/_edit_lock_ = true
+
+[node name="Restart" type="Button" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 40)
+offset_left = 512.0
+offset_top = 320.0
+offset_right = 640.0
+offset_bottom = 360.0
+text = "Restart"
+
+[node name="Label" type="Label" parent="."]
+offset_top = 128.0
+offset_right = 1152.0
+offset_bottom = 224.0
+text = "Game Over"
+label_settings = SubResource("LabelSettings_xdobt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="Button" parent="."]
+custom_minimum_size = Vector2(128, 40)
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 640.0
+offset_bottom = 424.0
+text = "Exit"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://cudc4su4n30ak"]
+
+[ext_resource type="Texture2D" uid="uid://ils0g7lr1u6i" path="res://assets/shrink_ray.png" id="1_n0kpr"]
+[ext_resource type="Script" path="res://assets/scripts/RayGun.gd" id="2_b3f7u"]
+[ext_resource type="PackedScene" uid="uid://cg4nc40m41m36" path="res://assets/objects/RedLaser.tscn" id="3_25tt2"]
+[ext_resource type="PackedScene" uid="uid://i8fvykenve2t" path="res://assets/objects/BlueLaser.tscn" id="4_hno3x"]
+
+[node name="RayGun" type="Sprite2D"]
+z_index = -1
+position = Vector2(0, -0.03125)
+rotation = 0.00373246
+texture = ExtResource("1_n0kpr")
+script = ExtResource("2_b3f7u")
+RedLaser = ExtResource("3_25tt2")
+BlueLaser = ExtResource("4_hno3x")

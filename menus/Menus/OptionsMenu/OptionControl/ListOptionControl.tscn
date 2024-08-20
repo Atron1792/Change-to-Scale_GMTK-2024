@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6bl3n5mp3m1e"]
+
+[ext_resource type="PackedScene" uid="uid://d7te75il06t7" path="res://menus/Menus/OptionsMenu/OptionControl/OptionControl.tscn" id="1_m86q8"]
+[ext_resource type="Script" path="res://menus/Menus/OptionsMenu/OptionControl/ListOptionControl.gd" id="2_js226"]
+
+[node name="OptionControl" instance=ExtResource("1_m86q8")]
+script = ExtResource("2_js226")
+lock_titles = false
+option_values = []
+option_titles = []
+
+[node name="OptionButton" type="OptionButton" parent="." index="1"]
+unique_name_in_owner = true
+layout_mode = 2

@@ -1,0 +1,14 @@
+Sprite2D
+CanvasLayer
+AnimatedSprite2D
+TileMap
+Label
+LineEdit
+RichTextLabel
+TextureRect
+Node2D
+ColorRect
+Button
+TextEdit
+CollisionShape2D
+Area2D

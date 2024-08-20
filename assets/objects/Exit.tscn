@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2nc7va4agbaf"]
+
+[ext_resource type="Script" path="res://assets/scripts/Exit.gd" id="1_nfgmt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_duoeb"]
+size = Vector2(32, 48)
+
+[node name="Exit" type="Area2D"]
+z_index = -2
+collision_layer = 128
+collision_mask = 8
+script = ExtResource("1_nfgmt")
+win_screen = "res://scenes/Win.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_duoeb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -16.0
+offset_top = -48.0
+offset_right = 16.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
