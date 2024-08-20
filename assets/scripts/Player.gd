@@ -10,7 +10,6 @@ extends CharacterBody2D
 @export_file("*.tscn") var game_over_scene
 @onready var animated_sprite = $"Player Sprite"
 @onready var ray_gun = $"RayGun"
-@onready var health_display = $Health
 
 func _ready():
 	add_to_group("Player")

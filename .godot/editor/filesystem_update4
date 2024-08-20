@@ -1,2 +1,5 @@
 res://assets/objects/Player.tscn
 res://assets/scripts/Player.gd
+res://menus/Menus/MainMenu/MainMenu.tscn
+res://scenes/Level_1.tscn
+res://assets/objects/HealthDisplay.tscn
